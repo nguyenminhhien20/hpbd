@@ -95,13 +95,13 @@
         position: relative;
         width: 100%;
         aspect-ratio: 7/10;
-        max-width: 280px;
+        max-width: 320px;
         margin: 0 auto;
       }
 
       @media (min-width: 640px) {
         .card-container {
-          max-width: 350px;
+          max-width: 400px;
         }
       }
 
@@ -143,7 +143,7 @@
         top: 0;
         left: 0;
         right: 0;
-        height: 60px;
+        height: 64px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -157,12 +157,12 @@
 
       .emoji-row {
         display: flex;
-        gap: 3px;
+        gap: 4px;
       }
 
       @media (min-width: 640px) {
         .emoji-row {
-          gap: 6px;
+          gap: 8px;
         }
       }
 
@@ -179,11 +179,11 @@
 
       .card-text {
         position: absolute;
-        top: 60px;
+        top: 64px;
         left: 0;
         right: 0;
         text-align: center;
-        padding: 0 15px;
+        padding: 0 16px;
       }
 
       @media (min-width: 640px) {
@@ -194,25 +194,6 @@
       }
 
       .card-title-1 {
-        font-size: 24px;
-        font-weight: 900;
-        margin-bottom: 8px;
-        background: linear-gradient(135deg, #ff1493, #ff69b4, #ff1493);
-        background-size: 200% 200%;
-        animation: gradient-shift 3s ease infinite;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
-
-      @media (min-width: 640px) {
-        .card-title-1 {
-          font-size: 38px;
-          margin-bottom: 16px;
-        }
-      }
-
-      .card-title-2 {
         font-size: 28px;
         font-weight: 900;
         margin-bottom: 8px;
@@ -225,15 +206,34 @@
       }
 
       @media (min-width: 640px) {
-        .card-title-2 {
+        .card-title-1 {
           font-size: 48px;
+          margin-bottom: 16px;
+        }
+      }
+
+      .card-title-2 {
+        font-size: 36px;
+        font-weight: 900;
+        margin-bottom: 8px;
+        background: linear-gradient(135deg, #ff1493, #ff69b4, #ff1493);
+        background-size: 200% 200%;
+        animation: gradient-shift 3s ease infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      @media (min-width: 640px) {
+        .card-title-2 {
+          font-size: 60px;
           margin-bottom: 12px;
         }
       }
 
       .card-divider {
-        width: 50px;
-        height: 3px;
+        width: 48px;
+        height: 4px;
         margin: 0 auto 8px;
         border-radius: 9999px;
         background: linear-gradient(to right, #ffc0cb, #ff69b4, #ffc0cb);
@@ -242,15 +242,15 @@
       @media (min-width: 640px) {
         .card-divider {
           width: 64px;
-          height: 4px;
           margin-bottom: 12px;
         }
       }
 
       .card-name {
         color: #ec4899;
-        font-size: 13px;
+        font-size: 14px;
         font-style: italic;
+        font-weight: 600;
       }
 
       @media (min-width: 640px) {
@@ -262,26 +262,26 @@
       .card-cake {
         position: absolute;
         left: 50%;
-        top: 55%;
+        top: 58%;
         transform: translateX(-50%);
-        font-size: 35px;
+        font-size: 48px;
       }
 
       @media (min-width: 640px) {
         .card-cake {
           top: 65%;
-          font-size: 55px;
+          font-size: 72px;
         }
       }
 
       .card-bottom-decoration {
         position: absolute;
-        bottom: 15px;
+        bottom: 16px;
         left: 0;
         right: 0;
         display: flex;
         justify-content: center;
-        gap: 6px;
+        gap: 8px;
       }
 
       @media (min-width: 640px) {
@@ -292,7 +292,7 @@
       }
 
       .emoji-pulse {
-        font-size: 16px;
+        font-size: 18px;
         animation: pulse 2s ease-in-out infinite;
       }
 
@@ -304,7 +304,7 @@
 
       .mai-flower {
         position: absolute;
-        font-size: 16px;
+        font-size: 18px;
         animation: float-around 3s ease-in-out infinite;
         filter: hue-rotate(-10deg) saturate(3) brightness(1.2)
           drop-shadow(0 0 8px rgba(255, 215, 0, 0.9));
@@ -331,14 +331,14 @@
       }
 
       .click-hint-button {
-        padding: 8px 18px;
+        padding: 8px 20px;
         border-radius: 9999px;
         background: linear-gradient(90deg, #ff1493, #ff69b4, #ff1493);
         background-size: 200% 100%;
         animation: gradient-slide 2s linear infinite;
         box-shadow: 0 5px 20px rgba(255, 20, 147, 0.5);
         color: white;
-        font-size: 12px;
+        font-size: 13px;
         font-weight: 600;
       }
 
@@ -387,7 +387,7 @@
         }
       }
 
-      /* Rocket trail - ENHANCED */
+      /* Rocket trail */
       .rocket {
         position: absolute;
         width: 3px;
@@ -435,7 +435,7 @@
         }
       }
 
-      /* Explosion - SUPER ENHANCED */
+      /* Explosion */
       .explosion-particle {
         position: absolute;
         width: 6px;
@@ -478,7 +478,7 @@
         }
       }
 
-      /* Heart Fireworks - NEW */
+      /* Heart Fireworks */
       .heart-firework {
         position: absolute;
         font-size: 40px;
@@ -504,7 +504,7 @@
         }
       }
 
-      /* Star Burst - NEW */
+      /* Star Burst */
       .star-burst {
         position: absolute;
         font-size: 30px;
@@ -526,7 +526,7 @@
         }
       }
 
-      /* Balloons - ENHANCED */
+      /* Balloons */
       .balloon {
         position: absolute;
         font-size: 38px;
@@ -569,7 +569,7 @@
         }
       }
 
-      /* Confetti - NEW */
+      /* Confetti */
       .confetti {
         position: absolute;
         width: 10px;
@@ -588,7 +588,7 @@
         }
       }
 
-      /* Text Burst - NEW */
+      /* Text Burst */
       .text-burst {
         position: absolute;
         font-size: 24px;
@@ -649,7 +649,7 @@
         opacity: 0.2;
       }
 
-      /* Photo Gallery Container - ENHANCED */
+      /* Photo Gallery Container */
       #photo-gallery {
         position: fixed;
         top: 0;
@@ -719,7 +719,7 @@
         }
       }
 
-      /* Photo Item - SUPER ENHANCED */
+      /* Photo Item */
       .photo-item {
         position: relative;
         overflow: hidden;
@@ -791,7 +791,7 @@
         transform: scale(1.15);
       }
 
-      /* Photo Overlay - ENHANCED */
+      /* Photo Overlay */
       .photo-overlay {
         position: absolute;
         inset: 0;
@@ -828,7 +828,7 @@
         }
       }
 
-      /* Gradient Border - ENHANCED */
+      /* Gradient Border */
       .photo-item::before {
         content: "";
         position: absolute;
@@ -873,7 +873,7 @@
         }
       }
 
-      /* Sparkles - NEW */
+      /* Sparkles */
       .photo-sparkle {
         position: absolute;
         font-size: 20px;
@@ -910,7 +910,7 @@
         }
       }
 
-      /* Photo Caption - SUPER ENHANCED */
+      /* Photo Caption */
       #photo-caption {
         position: fixed;
         top: 40px;
@@ -971,7 +971,7 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: 6px;
+        gap: 8px;
       }
 
       @media (min-width: 640px) {
@@ -981,7 +981,7 @@
       }
 
       .caption-word {
-        font-size: 28px;
+        font-size: 32px;
         font-weight: 900;
         background: linear-gradient(
           135deg,
@@ -1050,7 +1050,7 @@
       }
 
       .caption-icon {
-        font-size: 32px;
+        font-size: 36px;
         animation: icon-bounce 2s ease-in-out infinite;
         filter: drop-shadow(0 0 20px rgba(255, 215, 0, 1))
           drop-shadow(0 0 40px rgba(255, 105, 180, 0.8));
@@ -1082,36 +1082,7 @@
         }
       }
 
-      /* Subtitle with name - NEW */
-      .caption-subtitle {
-        margin-top: 8px;
-        font-size: 14px;
-        font-weight: 600;
-        color: #ffc0cb;
-        animation: subtitle-glow 2s ease-in-out infinite;
-        letter-spacing: 1px;
-      }
-
-      @media (min-width: 640px) {
-        .caption-subtitle {
-          margin-top: 12px;
-          font-size: 18px;
-        }
-      }
-
-      @keyframes subtitle-glow {
-        0%,
-        100% {
-          text-shadow: 0 0 10px rgba(255, 192, 203, 0.8),
-            0 0 20px rgba(255, 105, 180, 0.6);
-        }
-        50% {
-          text-shadow: 0 0 20px rgba(255, 192, 203, 1),
-            0 0 40px rgba(255, 105, 180, 1), 0 0 60px rgba(157, 78, 221, 0.8);
-        }
-      }
-
-      /* Bottom Message - ENHANCED */
+      /* Bottom Message */
       .gallery-message {
         margin-top: 40px;
         text-align: center;
@@ -1339,44 +1310,44 @@
               <!-- Mai Flowers -->
               <div
                 class="mai-flower"
-                style="left: 15%; top: 20%; animation-delay: 0s"
+                style="left: 15%; top: 22%; animation-delay: 0s"
               >
                 🌼
               </div>
               <div
                 class="mai-flower"
-                style="left: 30%; top: 45%; animation-delay: 0.3s"
+                style="left: 30%; top: 48%; animation-delay: 0.3s"
               >
                 🌼
               </div>
               <div
                 class="mai-flower"
-                style="left: 45%; top: 25%; animation-delay: 0.6s"
+                style="left: 45%; top: 28%; animation-delay: 0.6s"
               >
                 🌼
               </div>
               <div
                 class="mai-flower"
-                style="left: 60%; top: 45%; animation-delay: 0.9s"
+                style="left: 60%; top: 48%; animation-delay: 0.9s"
               >
                 🌼
               </div>
               <div
                 class="mai-flower"
-                style="left: 75%; top: 25%; animation-delay: 1.2s"
+                style="left: 75%; top: 28%; animation-delay: 1.2s"
               >
                 🌼
               </div>
               <div
                 class="mai-flower"
-                style="left: 90%; top: 45%; animation-delay: 1.5s"
+                style="left: 90%; top: 48%; animation-delay: 1.5s"
               >
                 🌼
               </div>
             </div>
 
             <div class="click-hint">
-              <div class="click-hint-button">Nhấn Đây💌</div>
+              <div class="click-hint-button">Đây💌</div>
             </div>
           </div>
         </div>
@@ -1396,14 +1367,14 @@
         <div class="gallery-grid" id="gallery-grid"></div>
 
         <!-- Bottom Message -->
-        <!-- <div class="gallery-message">
+        <div class="gallery-message">
           <div class="message-box">
             <div class="message-glow"></div>
             <div class="message-content">
-              🎉 Chúc bạn tuổi mới tràn đầy niềm vui & hạnh phúc! 🎉
+              🎂Chúc tất cả trừ vất vả🎂
             </div>
           </div>
-        </div> -->
+        </div>
       </div>
 
       <!-- Photo Caption -->
@@ -1415,9 +1386,6 @@
             <span class="caption-icon">🎂</span>
             <span class="caption-word">BIRTHDAY</span>
           </div>
-          <!-- <div class="caption-subtitle">
-            ✨ Phạm Thị Tuyết Mai ✨
-          </div> -->
         </div>
       </div>
 
@@ -1443,8 +1411,9 @@
       ];
 
       const messages = [
-        "CHÚC MỪNG SINH NHẬT 🎉",
-        "07.12.2025 🕯️",
+        "CHÚC MỪNG",
+        "SINH NHẬT 🎉",
+        "07.12.2025",
         "22+",
         "PHẠM THỊ TUYẾT MAI",
       ];
@@ -1483,11 +1452,11 @@
           // Add sparkles
           const sparkle1 = document.createElement("div");
           sparkle1.className = "photo-sparkle photo-sparkle-1";
-          sparkle1.textContent = "✨";
+          sparkle1.textContent = "🎉";
 
           const sparkle2 = document.createElement("div");
           sparkle2.className = "photo-sparkle photo-sparkle-2";
-          sparkle2.textContent = "💫";
+          sparkle2.textContent = "🎊";
 
           item.appendChild(img);
           item.appendChild(overlay);
@@ -1624,7 +1593,7 @@
       // Create star burst
       function createStarBurst(x, y) {
         const container = document.getElementById("fireworks-container");
-        const stars = ["⭐", "✨", "🌟", "💫"];
+        const stars = ["🎆", "🎉", "🎇", "🎊"];
 
         for (let i = 0; i < 5; i++) {
           const star = document.createElement("div");
@@ -1754,7 +1723,7 @@
         offCanvas.width = canvas.width;
         offCanvas.height = canvas.height;
 
-        const fontSize = Math.floor(offCanvas.height * 0.35);
+        const fontSize = Math.floor(offCanvas.height * 0.4);
         ctx.font = "bold " + fontSize + "px Arial";
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
@@ -1770,8 +1739,8 @@
         ).data;
         const points = [];
 
-        for (let y = 0; y < offCanvas.height; y += 4) {
-          for (let x = 0; x < offCanvas.width; x += 4) {
+        for (let y = 0; y < offCanvas.height; y += 3) {
+          for (let x = 0; x < offCanvas.width; x += 3) {
             const index = (y * offCanvas.width + x) * 4;
             if (imageData[index + 3] > 128) {
               points.push({ x: x, y: y });
@@ -1831,11 +1800,12 @@
         const ctx = canvas.getContext("2d");
 
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        ctx.fillStyle = "#ff6bbb";
-        ctx.font = "bold 12px monospace";
+        // Brighter pink color
+        ctx.fillStyle = "#ff69b4";
+        ctx.font = "bold 14px monospace";
         ctx.textAlign = "center";
-        ctx.shadowBlur = 8;
-        ctx.shadowColor = "#ff6bbb";
+        ctx.shadowBlur = 12;
+        ctx.shadowColor = "#ff69b4";
 
         particles.forEach((particle) => {
           particle.x += (particle.tx - particle.x) * 0.08;
@@ -1854,7 +1824,7 @@
         const canvas = document.getElementById("ascii-canvas");
 
         const width = Math.min(window.innerWidth * 0.95, 1200);
-        const height = window.innerWidth < 768 ? 100 : 200;
+        const height = window.innerWidth < 768 ? 120 : 200;
         canvas.width = width;
         canvas.height = height;
 
@@ -1872,7 +1842,7 @@
             setTimeout(() => {
               morphTo(msg);
             }, delay);
-            delay += 3000;
+            delay += 4500; // Changed from 3000 to 4500 for slower display
           });
 
           setTimeout(() => {
@@ -1907,7 +1877,8 @@
         function rain() {
           ctx.fillStyle = "rgba(0,0,0,0.07)";
           ctx.fillRect(0, 0, canvas.width, canvas.height);
-          ctx.fillStyle = "#ff7cb8";
+          // Brighter pink color
+          ctx.fillStyle = "#ff69b4";
           ctx.font = fontSize + "px monospace";
 
           for (let i = 0; i < drops.length; i++) {
