@@ -2,9 +2,12 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>Happy Birthday </title>
+    <title>Happy Birthday</title>
     <style>
       * {
         margin: 0;
@@ -46,9 +49,15 @@
       }
 
       @keyframes flashAnim {
-        0% { opacity: 0; }
-        25% { opacity: 1; }
-        100% { opacity: 0; }
+        0% {
+          opacity: 0;
+        }
+        25% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
       }
 
       /* Birthday Card */
@@ -110,7 +119,12 @@
         height: 100%;
         border-radius: 30px;
         overflow: hidden;
-        background: linear-gradient(135deg, #fff0f5 0%, #ffe4e9 50%, #ffd1dc 100%);
+        background: linear-gradient(
+          135deg,
+          #fff0f5 0%,
+          #ffe4e9 50%,
+          #ffd1dc 100%
+        );
         box-shadow: 0 30px 90px rgba(255, 20, 147, 0.4),
           0 15px 50px rgba(255, 105, 180, 0.3),
           inset 0 2px 30px rgba(255, 255, 255, 0.5);
@@ -343,7 +357,11 @@
         pointer-events: none;
         overflow: hidden;
         display: none;
-        background: radial-gradient(circle at center, rgba(139, 0, 139, 0.2), transparent 60%);
+        background: radial-gradient(
+          circle at center,
+          rgba(139, 0, 139, 0.2),
+          transparent 60%
+        );
       }
 
       #fireworks-container.show {
@@ -352,11 +370,20 @@
       }
 
       @keyframes fireworks-bg-pulse {
-        0%, 100% {
-          background: radial-gradient(circle at 30% 40%, rgba(139, 0, 139, 0.15), transparent 50%);
+        0%,
+        100% {
+          background: radial-gradient(
+            circle at 30% 40%,
+            rgba(139, 0, 139, 0.15),
+            transparent 50%
+          );
         }
         50% {
-          background: radial-gradient(circle at 70% 60%, rgba(255, 20, 147, 0.2), transparent 50%);
+          background: radial-gradient(
+            circle at 70% 60%,
+            rgba(255, 20, 147, 0.2),
+            transparent 50%
+          );
         }
       }
 
@@ -366,12 +393,13 @@
         width: 3px;
         height: 40px;
         border-radius: 5px;
-        animation: rocket-launch 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+        animation: rocket-launch 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+          forwards;
         filter: blur(0.5px);
       }
 
       .rocket::after {
-        content: '';
+        content: "";
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -385,7 +413,8 @@
       }
 
       @keyframes rocket-glow {
-        0%, 100% {
+        0%,
+        100% {
           transform: translateX(-50%) scale(1);
           opacity: 1;
         }
@@ -412,12 +441,13 @@
         width: 6px;
         height: 6px;
         border-radius: 50%;
-        animation: particle-burst 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+        animation: particle-burst 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+          forwards;
         filter: blur(0.5px);
       }
 
       .explosion-particle::before {
-        content: '';
+        content: "";
         position: absolute;
         inset: -2px;
         border-radius: 50%;
@@ -465,7 +495,11 @@
           opacity: 1;
         }
         100% {
-          transform: translate(calc(-50% + var(--heart-x)), calc(-50% + var(--heart-y))) scale(1.5) rotate(360deg);
+          transform: translate(
+              calc(-50% + var(--heart-x)),
+              calc(-50% + var(--heart-y))
+            )
+            scale(1.5) rotate(360deg);
           opacity: 0;
         }
       }
@@ -501,13 +535,17 @@
       }
 
       .balloon::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 100%;
         left: 50%;
         width: 2px;
         height: 50px;
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), transparent);
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0.5),
+          transparent
+        );
         transform: translateX(-50%);
       }
 
@@ -625,8 +663,16 @@
         overflow-x: hidden;
         -webkit-overflow-scrolling: touch;
         padding: 140px 12px 180px 12px;
-        background: radial-gradient(circle at top, rgba(139, 0, 139, 0.15), transparent 70%),
-                    radial-gradient(circle at bottom, rgba(255, 20, 147, 0.1), transparent 60%);
+        background: radial-gradient(
+            circle at top,
+            rgba(139, 0, 139, 0.15),
+            transparent 70%
+          ),
+          radial-gradient(
+            circle at bottom,
+            rgba(255, 20, 147, 0.1),
+            transparent 60%
+          );
       }
 
       @media (min-width: 640px) {
@@ -683,7 +729,7 @@
         cursor: pointer;
         transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
-                    0 0 0 1px rgba(255, 255, 255, 0.1);
+          0 0 0 1px rgba(255, 255, 255, 0.1);
       }
 
       @media (min-width: 640px) {
@@ -695,8 +741,7 @@
       .photo-item:hover {
         transform: scale(1.08) translateY(-8px) rotate(2deg);
         box-shadow: 0 20px 60px rgba(255, 20, 147, 0.6),
-                    0 0 80px rgba(255, 105, 180, 0.4),
-                    0 0 0 3px rgba(255, 255, 255, 0.3);
+          0 0 80px rgba(255, 105, 180, 0.4), 0 0 0 3px rgba(255, 255, 255, 0.3);
         z-index: 10;
       }
 
@@ -704,12 +749,24 @@
         transform: scale(0.95);
       }
 
-      .photo-item:nth-child(1) { animation-delay: 0.1s; }
-      .photo-item:nth-child(2) { animation-delay: 0.2s; }
-      .photo-item:nth-child(3) { animation-delay: 0.3s; }
-      .photo-item:nth-child(4) { animation-delay: 0.4s; }
-      .photo-item:nth-child(5) { animation-delay: 0.5s; }
-      .photo-item:nth-child(6) { animation-delay: 0.6s; }
+      .photo-item:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .photo-item:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .photo-item:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+      .photo-item:nth-child(4) {
+        animation-delay: 0.4s;
+      }
+      .photo-item:nth-child(5) {
+        animation-delay: 0.5s;
+      }
+      .photo-item:nth-child(6) {
+        animation-delay: 0.6s;
+      }
 
       @keyframes photo-pop-in {
         0% {
@@ -738,10 +795,12 @@
       .photo-overlay {
         position: absolute;
         inset: 0;
-        background: linear-gradient(135deg, 
-          rgba(255, 20, 147, 0.4), 
+        background: linear-gradient(
+          135deg,
+          rgba(255, 20, 147, 0.4),
           rgba(147, 51, 234, 0.3),
-          rgba(255, 105, 180, 0.4));
+          rgba(255, 105, 180, 0.4)
+        );
         opacity: 0;
         transition: opacity 0.5s;
         display: flex;
@@ -771,20 +830,23 @@
 
       /* Gradient Border - ENHANCED */
       .photo-item::before {
-        content: '';
+        content: "";
         position: absolute;
         inset: -3px;
         border-radius: 20px;
         padding: 3px;
-        background: linear-gradient(135deg, 
-          #ff1493, 
-          #9333ea, 
-          #ff69b4, 
+        background: linear-gradient(
+          135deg,
+          #ff1493,
+          #9333ea,
+          #ff69b4,
           #ffd700,
-          #ff1493);
+          #ff1493
+        );
         background-size: 300% 300%;
         animation: gradient-rotate 3s ease infinite;
-        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box,
+          linear-gradient(#fff 0 0);
         -webkit-mask-composite: xor;
         mask-composite: exclude;
         opacity: 0;
@@ -802,7 +864,8 @@
       }
 
       @keyframes gradient-rotate {
-        0%, 100% {
+        0%,
+        100% {
           background-position: 0% 50%;
         }
         50% {
@@ -836,7 +899,8 @@
       }
 
       @keyframes sparkle-twinkle {
-        0%, 100% {
+        0%,
+        100% {
           opacity: 1;
           transform: scale(1) rotate(0deg);
         }
@@ -881,15 +945,15 @@
         inset: -30px;
         filter: blur(50px);
         opacity: 0.8;
-        background: 
-          radial-gradient(circle, #ff1493 0%, transparent 70%),
+        background: radial-gradient(circle, #ff1493 0%, transparent 70%),
           radial-gradient(circle, #9d4edd 0%, transparent 70%),
           radial-gradient(circle, #ffd700 0%, transparent 70%);
         animation: glow-pulse 2.5s ease-in-out infinite;
       }
 
       @keyframes glow-pulse {
-        0%, 100% {
+        0%,
+        100% {
           opacity: 0.6;
           transform: scale(1);
           filter: blur(50px);
@@ -919,21 +983,24 @@
       .caption-word {
         font-size: 28px;
         font-weight: 900;
-        background: linear-gradient(135deg, 
-          #ff1493 0%, 
-          #ff69b4 20%, 
-          #ffd700 40%, 
+        background: linear-gradient(
+          135deg,
+          #ff1493 0%,
+          #ff69b4 20%,
+          #ffd700 40%,
           #9d4edd 60%,
           #ff69b4 80%,
-          #ff1493 100%);
+          #ff1493 100%
+        );
         background-size: 400% 400%;
         animation: gradient-flow 5s ease infinite;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         filter: drop-shadow(0 0 25px rgba(255, 105, 180, 1))
-                drop-shadow(0 0 50px rgba(157, 78, 221, 0.6));
-        animation: text-glow 2.5s ease-in-out infinite, text-float 3s ease-in-out infinite;
+          drop-shadow(0 0 50px rgba(157, 78, 221, 0.6));
+        animation: text-glow 2.5s ease-in-out infinite,
+          text-float 3s ease-in-out infinite;
         letter-spacing: 2px;
       }
 
@@ -950,7 +1017,8 @@
       }
 
       @keyframes gradient-flow {
-        0%, 100% {
+        0%,
+        100% {
           background-position: 0% 50%;
         }
         50% {
@@ -959,19 +1027,21 @@
       }
 
       @keyframes text-glow {
-        0%, 100% {
+        0%,
+        100% {
           filter: drop-shadow(0 0 20px rgba(255, 105, 180, 0.8))
-                  drop-shadow(0 0 40px rgba(157, 78, 221, 0.4));
+            drop-shadow(0 0 40px rgba(157, 78, 221, 0.4));
         }
         50% {
           filter: drop-shadow(0 0 40px rgba(255, 105, 180, 1))
-                  drop-shadow(0 0 80px rgba(157, 78, 221, 0.8))
-                  drop-shadow(0 0 120px rgba(255, 215, 0, 0.6));
+            drop-shadow(0 0 80px rgba(157, 78, 221, 0.8))
+            drop-shadow(0 0 120px rgba(255, 215, 0, 0.6));
         }
       }
 
       @keyframes text-float {
-        0%, 100% {
+        0%,
+        100% {
           transform: translateY(0px);
         }
         50% {
@@ -983,7 +1053,7 @@
         font-size: 32px;
         animation: icon-bounce 2s ease-in-out infinite;
         filter: drop-shadow(0 0 20px rgba(255, 215, 0, 1))
-                drop-shadow(0 0 40px rgba(255, 105, 180, 0.8));
+          drop-shadow(0 0 40px rgba(255, 105, 180, 0.8));
         transform-origin: center;
       }
 
@@ -1000,7 +1070,8 @@
       }
 
       @keyframes icon-bounce {
-        0%, 100% {
+        0%,
+        100% {
           transform: translateY(0) scale(1) rotate(0deg);
         }
         25% {
@@ -1029,14 +1100,14 @@
       }
 
       @keyframes subtitle-glow {
-        0%, 100% {
+        0%,
+        100% {
           text-shadow: 0 0 10px rgba(255, 192, 203, 0.8),
-                       0 0 20px rgba(255, 105, 180, 0.6);
+            0 0 20px rgba(255, 105, 180, 0.6);
         }
         50% {
           text-shadow: 0 0 20px rgba(255, 192, 203, 1),
-                       0 0 40px rgba(255, 105, 180, 1),
-                       0 0 60px rgba(157, 78, 221, 0.8);
+            0 0 40px rgba(255, 105, 180, 1), 0 0 60px rgba(157, 78, 221, 0.8);
         }
       }
 
@@ -1082,13 +1153,15 @@
         position: relative;
         padding: 16px 32px;
         border-radius: 50px;
-        background: linear-gradient(135deg, 
-          rgba(255, 20, 147, 0.9), 
-          rgba(157, 78, 221, 0.9));
+        background: linear-gradient(
+          135deg,
+          rgba(255, 20, 147, 0.9),
+          rgba(157, 78, 221, 0.9)
+        );
         backdrop-filter: blur(10px);
         border: 2px solid rgba(255, 192, 203, 0.4);
         box-shadow: 0 8px 32px rgba(255, 20, 147, 0.5),
-                    0 0 60px rgba(157, 78, 221, 0.3);
+          0 0 60px rgba(157, 78, 221, 0.3);
         color: white;
         font-size: 15px;
         font-weight: 600;
@@ -1155,7 +1228,8 @@
 
       /* Common animations */
       @keyframes gradient-shift {
-        0%, 100% {
+        0%,
+        100% {
           background-position: 0% 50%;
         }
         50% {
@@ -1173,7 +1247,8 @@
       }
 
       @keyframes bounce {
-        0%, 100% {
+        0%,
+        100% {
           transform: translateY(0);
         }
         50% {
@@ -1182,7 +1257,8 @@
       }
 
       @keyframes pulse {
-        0%, 100% {
+        0%,
+        100% {
           opacity: 1;
           transform: scale(1);
         }
@@ -1193,7 +1269,8 @@
       }
 
       @keyframes float-around {
-        0%, 100% {
+        0%,
+        100% {
           transform: translate(0, 0) rotate(0deg);
           opacity: 0.6;
         }
@@ -1221,12 +1298,24 @@
               <div class="card-top-decoration">
                 <div class="emoji-row">
                   <div class="emoji-bounce" style="animation-delay: 0s">🎈</div>
-                  <div class="emoji-bounce" style="animation-delay: 0.1s">🎉</div>
-                  <div class="emoji-bounce" style="animation-delay: 0.2s">🎂</div>
-                  <div class="emoji-bounce" style="animation-delay: 0.3s">🎁</div>
-                  <div class="emoji-bounce" style="animation-delay: 0.4s">🎂</div>
-                  <div class="emoji-bounce" style="animation-delay: 0.5s">🎉</div>
-                  <div class="emoji-bounce" style="animation-delay: 0.6s">🎈</div>
+                  <div class="emoji-bounce" style="animation-delay: 0.1s">
+                    🎉
+                  </div>
+                  <div class="emoji-bounce" style="animation-delay: 0.2s">
+                    🎂
+                  </div>
+                  <div class="emoji-bounce" style="animation-delay: 0.3s">
+                    🎁
+                  </div>
+                  <div class="emoji-bounce" style="animation-delay: 0.4s">
+                    🎂
+                  </div>
+                  <div class="emoji-bounce" style="animation-delay: 0.5s">
+                    🎉
+                  </div>
+                  <div class="emoji-bounce" style="animation-delay: 0.6s">
+                    🎈
+                  </div>
                 </div>
               </div>
 
@@ -1248,12 +1337,42 @@
               </div>
 
               <!-- Mai Flowers -->
-              <div class="mai-flower" style="left: 15%; top: 20%; animation-delay: 0s">🌼</div>
-              <div class="mai-flower" style="left: 30%; top: 45%; animation-delay: 0.3s">🌼</div>
-              <div class="mai-flower" style="left: 45%; top: 25%; animation-delay: 0.6s">🌼</div>
-              <div class="mai-flower" style="left: 60%; top: 45%; animation-delay: 0.9s">🌼</div>
-              <div class="mai-flower" style="left: 75%; top: 25%; animation-delay: 1.2s">🌼</div>
-              <div class="mai-flower" style="left: 90%; top: 45%; animation-delay: 1.5s">🌼</div>
+              <div
+                class="mai-flower"
+                style="left: 15%; top: 20%; animation-delay: 0s"
+              >
+                🌼
+              </div>
+              <div
+                class="mai-flower"
+                style="left: 30%; top: 45%; animation-delay: 0.3s"
+              >
+                🌼
+              </div>
+              <div
+                class="mai-flower"
+                style="left: 45%; top: 25%; animation-delay: 0.6s"
+              >
+                🌼
+              </div>
+              <div
+                class="mai-flower"
+                style="left: 60%; top: 45%; animation-delay: 0.9s"
+              >
+                🌼
+              </div>
+              <div
+                class="mai-flower"
+                style="left: 75%; top: 25%; animation-delay: 1.2s"
+              >
+                🌼
+              </div>
+              <div
+                class="mai-flower"
+                style="left: 90%; top: 45%; animation-delay: 1.5s"
+              >
+                🌼
+              </div>
             </div>
 
             <div class="click-hint">
@@ -1275,7 +1394,7 @@
       <!-- Photo Gallery -->
       <div id="photo-gallery">
         <div class="gallery-grid" id="gallery-grid"></div>
-        
+
         <!-- Bottom Message -->
         <!-- <div class="gallery-message">
           <div class="message-box">
@@ -1313,7 +1432,15 @@
       let animFrame;
       let matrixInterval;
 
-      const pinkColors = ["#ff1493", "#ff69b4", "#ff85a2", "#ffb6c1", "#ffc0cb", "#ff99cc", "#ff77aa"];
+      const pinkColors = [
+        "#ff1493",
+        "#ff69b4",
+        "#ff85a2",
+        "#ffb6c1",
+        "#ffc0cb",
+        "#ff99cc",
+        "#ff77aa",
+      ];
 
       const messages = [
         "CHÚC MỪNG SINH NHẬT 🎉",
@@ -1323,13 +1450,13 @@
       ];
 
       const photos = [
-  { url: "images/mei.jpg", emoji: "🎂" },
-  { url: "images/mei1.jpg", emoji: "🎈" },
-  { url: "images/mei3.jpg", emoji: "🎁" },
-  { url: "images/mei4.jpg", emoji: "💖" },
-  { url: "images/mei2.jpg", emoji: "🎉" },
-  { url: "images/celebrate.jpg", emoji: "🥳" }
-];
+        { url: "images/mei.jpg", emoji: "🎂" },
+        { url: "images/mei1.jpg", emoji: "🎈" },
+        { url: "images/mei3.jpg", emoji: "🎁" },
+        { url: "images/mei4.jpg", emoji: "💖" },
+        { url: "images/mei2.jpg", emoji: "🎉" },
+        { url: "images/mei5.jpg", emoji: "🥳" },
+      ];
 
       // Create photo gallery
       function createPhotoGallery() {
@@ -1339,29 +1466,29 @@
         photos.forEach((photo, index) => {
           const item = document.createElement("div");
           item.className = "photo-item";
-          
+
           const img = document.createElement("img");
           img.src = photo.url;
           img.alt = "Birthday photo " + (index + 1);
           img.loading = "lazy";
-          
+
           const overlay = document.createElement("div");
           overlay.className = "photo-overlay";
-          
+
           const emoji = document.createElement("div");
           emoji.className = "photo-overlay-emoji";
           emoji.textContent = photo.emoji;
           overlay.appendChild(emoji);
-          
+
           // Add sparkles
           const sparkle1 = document.createElement("div");
           sparkle1.className = "photo-sparkle photo-sparkle-1";
           sparkle1.textContent = "✨";
-          
+
           const sparkle2 = document.createElement("div");
           sparkle2.className = "photo-sparkle photo-sparkle-2";
           sparkle2.textContent = "💫";
-          
+
           item.appendChild(img);
           item.appendChild(overlay);
           item.appendChild(sparkle1);
@@ -1374,7 +1501,9 @@
       function handleCardClick() {
         const card = document.getElementById("birthday-card");
         const flash = document.getElementById("flash");
-        const fireworksContainer = document.getElementById("fireworks-container");
+        const fireworksContainer = document.getElementById(
+          "fireworks-container"
+        );
 
         card.classList.remove("show");
         flash.classList.add("active");
@@ -1446,12 +1575,16 @@
         for (let i = 0; i < 40; i++) {
           const balloon = document.createElement("div");
           balloon.className = "balloon";
-          balloon.textContent = balloonEmojis[Math.floor(Math.random() * balloonEmojis.length)];
+          balloon.textContent =
+            balloonEmojis[Math.floor(Math.random() * balloonEmojis.length)];
           balloon.style.left = Math.random() * 100 + "%";
           balloon.style.bottom = "-50px";
-          balloon.style.setProperty("--rotate", (Math.random() * 40 - 20) + "deg");
-          balloon.style.animationDuration = (4 + Math.random() * 2) + "s";
-          balloon.style.animationDelay = (Math.random() * 2.5) + "s";
+          balloon.style.setProperty(
+            "--rotate",
+            Math.random() * 40 - 20 + "deg"
+          );
+          balloon.style.animationDuration = 4 + Math.random() * 2 + "s";
+          balloon.style.animationDelay = Math.random() * 2.5 + "s";
           balloon.style.color = pinkColors[i % pinkColors.length];
           container.appendChild(balloon);
         }
@@ -1461,7 +1594,7 @@
       function createHeartFirework(x, y, color) {
         const container = document.getElementById("fireworks-container");
         const hearts = ["💖", "💕", "💗", "💓", "💝"];
-        
+
         for (let i = 0; i < 8; i++) {
           const heart = document.createElement("div");
           heart.className = "heart-firework";
@@ -1469,19 +1602,19 @@
           heart.style.left = x + "%";
           heart.style.top = y + "%";
           heart.style.color = color;
-          
+
           const angle = (360 / 8) * i;
           const distance = 150 + Math.random() * 100;
-          const rad = angle * Math.PI / 180;
+          const rad = (angle * Math.PI) / 180;
           const dx = Math.cos(rad) * distance;
           const dy = Math.sin(rad) * distance;
-          
+
           heart.style.setProperty("--heart-x", dx + "px");
           heart.style.setProperty("--heart-y", dy + "px");
           heart.style.animationDelay = Math.random() * 0.3 + "s";
-          
+
           container.appendChild(heart);
-          
+
           setTimeout(() => {
             heart.remove();
           }, 2500);
@@ -1492,7 +1625,7 @@
       function createStarBurst(x, y) {
         const container = document.getElementById("fireworks-container");
         const stars = ["⭐", "✨", "🌟", "💫"];
-        
+
         for (let i = 0; i < 5; i++) {
           const star = document.createElement("div");
           star.className = "star-burst";
@@ -1500,9 +1633,9 @@
           star.style.left = x + "%";
           star.style.top = y + "%";
           star.style.animationDelay = i * 0.1 + "s";
-          
+
           container.appendChild(star);
-          
+
           setTimeout(() => {
             star.remove();
           }, 2000);
@@ -1517,10 +1650,11 @@
         textEl.textContent = text;
         textEl.style.left = x + "%";
         textEl.style.top = y + "%";
-        textEl.style.color = pinkColors[Math.floor(Math.random() * pinkColors.length)];
-        
+        textEl.style.color =
+          pinkColors[Math.floor(Math.random() * pinkColors.length)];
+
         container.appendChild(textEl);
-        
+
         setTimeout(() => {
           textEl.remove();
         }, 2500);
@@ -1533,17 +1667,18 @@
         confetti.className = "confetti";
         confetti.style.left = Math.random() * 100 + "%";
         confetti.style.top = "-20px";
-        confetti.style.background = pinkColors[Math.floor(Math.random() * pinkColors.length)];
-        confetti.style.animationDuration = (2 + Math.random() * 2) + "s";
+        confetti.style.background =
+          pinkColors[Math.floor(Math.random() * pinkColors.length)];
+        confetti.style.animationDuration = 2 + Math.random() * 2 + "s";
         confetti.style.animationDelay = Math.random() * 1 + "s";
-        
+
         // Random shapes
         if (Math.random() > 0.5) {
           confetti.style.borderRadius = "50%";
         }
-        
+
         container.appendChild(confetti);
-        
+
         setTimeout(() => {
           confetti.remove();
         }, 5000);
@@ -1560,9 +1695,13 @@
         rocket.className = "rocket";
         rocket.style.left = startX + "%";
         rocket.style.bottom = "0";
-        rocket.style.background = "linear-gradient(to top, " + color + ", transparent)";
+        rocket.style.background =
+          "linear-gradient(to top, " + color + ", transparent)";
         rocket.style.boxShadow = "0 0 25px " + color + ", 0 0 50px " + color;
-        rocket.style.setProperty("--launch-distance", "-" + (100 - endY) + "vh");
+        rocket.style.setProperty(
+          "--launch-distance",
+          "-" + (100 - endY) + "vh"
+        );
         container.appendChild(rocket);
 
         setTimeout(() => {
@@ -1585,16 +1724,17 @@
           const distance = 100 + Math.random() * 80;
           const particle = document.createElement("div");
           particle.className = "explosion-particle";
-          
+
           particle.style.background = color;
-          particle.style.boxShadow = "0 0 20px " + color + ", 0 0 40px " + color;
-          
-          const rad = angle * Math.PI / 180;
+          particle.style.boxShadow =
+            "0 0 20px " + color + ", 0 0 40px " + color;
+
+          const rad = (angle * Math.PI) / 180;
           const dx = Math.cos(rad) * distance;
           const dy = Math.sin(rad) * distance;
           particle.style.setProperty("--particle-x", dx + "px");
           particle.style.setProperty("--particle-y", dy + "px");
-          
+
           explosion.appendChild(particle);
         }
 
@@ -1622,7 +1762,12 @@
         ctx.fillStyle = "white";
         ctx.fillText(text, offCanvas.width / 2, offCanvas.height / 2);
 
-        const imageData = ctx.getImageData(0, 0, offCanvas.width, offCanvas.height).data;
+        const imageData = ctx.getImageData(
+          0,
+          0,
+          offCanvas.width,
+          offCanvas.height
+        ).data;
         const points = [];
 
         for (let y = 0; y < offCanvas.height; y += 4) {
@@ -1787,9 +1932,9 @@
         for (let i = 0; i < 15; i++) {
           const firework = document.createElement("div");
           firework.className = "bg-firework";
-          firework.style.left = (10 + (i % 5) * 20) + "%";
-          firework.style.top = (15 + Math.floor(i / 5) * 30) + "%";
-          firework.style.animationDelay = (i * 0.3) + "s";
+          firework.style.left = 10 + (i % 5) * 20 + "%";
+          firework.style.top = 15 + Math.floor(i / 5) * 30 + "%";
+          firework.style.animationDelay = i * 0.3 + "s";
 
           for (let j = 0; j < 16; j++) {
             const particle = document.createElement("div");
@@ -1797,8 +1942,8 @@
             const color = pinkColors[j % pinkColors.length];
             particle.style.background = color;
             particle.style.boxShadow = "0 0 10px " + color;
-            particle.style.setProperty("--angle", (j * 22.5) + "deg");
-            particle.style.animationDelay = (i * 0.3) + "s";
+            particle.style.setProperty("--angle", j * 22.5 + "deg");
+            particle.style.animationDelay = i * 0.3 + "s";
             firework.appendChild(particle);
           }
 
@@ -1811,18 +1956,24 @@
           const balloon = document.createElement("div");
           balloon.className = "balloon";
           balloon.textContent = balloonEmojis[i % balloonEmojis.length];
-          balloon.style.left = (i * 5) + "%";
+          balloon.style.left = i * 5 + "%";
           balloon.style.bottom = "-50px";
-          balloon.style.setProperty("--rotate", (Math.random() * 40 - 20) + "deg");
-          balloon.style.animationDuration = (5 + Math.random() * 3) + "s";
-          balloon.style.animationDelay = (Math.random() * 4) + "s";
-          balloon.style.filter = "drop-shadow(0 0 10px " + pinkColors[i % pinkColors.length] + ")";
+          balloon.style.setProperty(
+            "--rotate",
+            Math.random() * 40 - 20 + "deg"
+          );
+          balloon.style.animationDuration = 5 + Math.random() * 3 + "s";
+          balloon.style.animationDelay = Math.random() * 4 + "s";
+          balloon.style.filter =
+            "drop-shadow(0 0 10px " + pinkColors[i % pinkColors.length] + ")";
           container.appendChild(balloon);
         }
       }
 
       // Setup event listeners
-      document.getElementById("card-button").addEventListener("click", handleCardClick);
+      document
+        .getElementById("card-button")
+        .addEventListener("click", handleCardClick);
 
       // Cleanup
       window.addEventListener("beforeunload", () => {
@@ -1832,13 +1983,17 @@
 
       // Prevent zoom on double tap
       let lastTouchEnd = 0;
-      document.addEventListener('touchend', function (event) {
-        const now = (new Date()).getTime();
-        if (now - lastTouchEnd <= 300) {
-          event.preventDefault();
-        }
-        lastTouchEnd = now;
-      }, false);
+      document.addEventListener(
+        "touchend",
+        function (event) {
+          const now = new Date().getTime();
+          if (now - lastTouchEnd <= 300) {
+            event.preventDefault();
+          }
+          lastTouchEnd = now;
+        },
+        false
+      );
     </script>
   </body>
 </html>
